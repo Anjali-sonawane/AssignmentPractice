@@ -1,0 +1,71 @@
+1. WAP to Check Prime Number using loop?
+
+int main()
+{
+ 
+   int n, i, count = 0;
+ 
+    cout<<"Enter number to check prime number or not";
+    scanf("%d",&n);
+ 
+    for(i=2; i<=n/2; ++i)
+    {	if(n%i==0)
+        {
+            count=1;
+            break;
+        }
+    }
+ 
+    if (count==0)
+        cout<<"prime number."<<n;
+    else
+        cout<<"not a prime number<<n
+     
+}
+2. WAP to Check if a Number is Positive or Negative
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num;
+ 
+    cout<<"enter a number";
+    cin>>num;
+    if (num >= 0)
+       cout<<"posiitive  number";
+    else
+          cout<<"negative number";
+}
+
+3. WAP to Find Factorial of a number
+#include<stdio.h>
+int main(){
+  int i,f=1,num;
+ 
+  printf("Enter a number: ");
+  scanf("%d",&num);
+ 
+  for(i=1;i<=num;i++)
+      f=f*i;
+ 
+  printf("Factorial of %d is: %d",num,f);
+  return 0;
+}
+
+4. WAP to Display Fibonacci series
+#include <stdio.h>
+int main() {
+    int i, n, t1 = 0, t2 = 1, nextTerm;
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+    printf("Fibonacci Series: ");
+
+    for (i = 1; i <= n; ++i) {
+        printf("%d, ", t1);
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+
+    return 0;
+}
